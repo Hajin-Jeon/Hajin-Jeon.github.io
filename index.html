@@ -1,432 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <meta property="og:image" content="assets/favicon.ico" />
-        <title>Hajin Jeon - Homepage</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hajin Jeon</title>
+    <meta
+      name="description"
+      content="Hajin Jeon — Senior Researcher at LG H&H. Research in Bioinformatics, Genomics, Blockchain, and Database."
+    />
+    <meta name="author" content="Hajin Jeon" />
+    <meta property="og:title" content="Hajin Jeon" />
+    <meta
+      property="og:description"
+      content="Senior Researcher at LG H&H. Research in Bioinformatics, Genomics, Blockchain, and Database."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hajin-jeon.github.io/" />
+    <meta property="og:image" content="https://hajin-jeon.github.io/assets/img/profile.jpg" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.dataset.theme = saved;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ6QRD0PNR"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-DJ6QRD0PNR');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-DJ6QRD0PNR');
     </script>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Hajin Jeon</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-brand" href="#top" id="top">Hajin Jeon</a>
+        <div class="header-right">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true">
+              <path d="M13.5 9.8A5.75 5.75 0 0 1 6.2 2.5a5.75 5.75 0 1 0 7.3 7.3z" stroke-linejoin="round" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true">
+              <circle cx="8" cy="8" r="2.8" />
+              <path
+                d="M8 1.5v1.4M8 13.1v1.4M1.5 8h1.4M13.1 8h1.4M3.4 3.4l1 1M11.6 11.6l1 1M12.6 3.4l-1 1M4.4 11.6l-1 1"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="profile" aria-label="Profile">
+        <div class="profile-center">
+          <img
+            class="profile-photo"
+            src="assets/img/profile.jpg"
+            alt="Portrait of Hajin Jeon"
+            width="184"
+            height="184"
+          />
+          <h1>Hajin Jeon</h1>
+          <p class="profile-role">Senior Researcher, LG H&amp;H</p>
+          <p class="profile-interests">
+            <strong>Research Interests:</strong> Bioinformatics, Genomics, Blockchain, Database, ...
+          </p>
+          <div class="profile-links">
+            <a
+              class="profile-link"
+              href="https://orcid.org/0000-0002-6513-3280"
+              title="ORCID: 0000-0002-6513-3280"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM5.65 4.35a.65.65 0 1 1 0 1.3.65.65 0 0 1 0-1.3zM5.08 6.4h1.14v5.25H5.08V6.4zm2.47 0h2.08c1.92 0 2.9 1.25 2.9 2.62 0 1.48-1.08 2.63-2.92 2.63H7.55V6.4zm1.14 1v3.25h.9c1.25 0 1.8-.8 1.8-1.63 0-.96-.63-1.62-1.82-1.62h-.88z" />
+              </svg>
+              <span>ORCID</span>
+            </a>
+            <a
+              class="profile-link"
+              href="https://scholar.google.com/citations?user=fUYn-2sAAAAJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true">
+                <path d="M1.5 6.25L8 3l6.5 3.25L8 9.5 1.5 6.25z" stroke-linejoin="round" />
+                <path d="M4.25 7.75v3.5c0 .95 1.68 1.75 3.75 1.75s3.75-.8 3.75-1.75v-3.5" stroke-linecap="round" />
+                <path d="M14.5 6.5v3.75" stroke-linecap="round" />
+              </svg>
+              <span>Google Scholar</span>
+            </a>
+            <a
+              class="profile-link"
+              href="https://github.com/Hajin-Jeon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 1.2a6.8 6.8 0 0 0-2.15 13.25c.34.06.46-.15.46-.33v-1.26c-1.88.41-2.28-.8-2.28-.8-.31-.78-.75-.99-.75-.99-.62-.42.05-.41.05-.41.68.05 1.04.7 1.04.7.61 1.04 1.59.74 1.98.57.06-.44.24-.74.43-.91-1.5-.17-3.08-.75-3.08-3.34 0-.74.26-1.34.7-1.81-.07-.17-.3-.86.07-1.8 0 0 .57-.18 1.87.69a6.5 6.5 0 0 1 3.4 0c1.3-.87 1.87-.69 1.87-.69.37.94.14 1.63.07 1.8.43.47.7 1.07.7 1.81 0 2.6-1.58 3.17-3.09 3.33.24.21.46.62.46 1.26v1.86c0 .18.12.4.47.33A6.8 6.8 0 0 0 8 1.2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a class="profile-link" href="mailto:hjjeon.bioinfo@gmail.com">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true">
+                <rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.25" />
+                <path d="M2.25 4l5.75 4.25L13.75 4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="publications">
+        <h2>Publications</h2>
+        <ol class="pub-list">
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/VASCO.png"
+              data-figure-caption="VASCO: Decentralized medical data sharing architecture with off-chain storage and view-based access control"
+              aria-label="View figure for VASCO"
+            >
+              <img src="assets/img/publication/VASCO.png" alt="VASCO system architecture diagram" loading="lazy" />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2610.34279" target="_blank" rel="noopener noreferrer">
+                  Decentralized Medical Data Sharing with Off-chain Storage and View-based Access Control
+                </a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Hajin Jeon</strong>, Hyung-Jin Yoon, Jemin Lee, Min-Soo Kim
+              </p>
+              <p class="pub-venue">
+                <em>arXiv preprint</em> arXiv:2610.34279, Oct. 2026.
+              </p>
+              <div class="pub-actions">
+                <a href="https://arxiv.org/abs/2610.34279" target="_blank" rel="noopener noreferrer">arXiv</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <a href="https://doi.org/10.48550/ARXIV.2610.34279" target="_blank" rel="noopener noreferrer">DOI</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/VASCO.png"
+                  data-figure-caption="VASCO: Decentralized medical data sharing architecture with off-chain storage and view-based access control"
+                >
+                  Figure
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#education">Education</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#work">Work</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#publication">Publication</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-vasco"
+                  aria-expanded="false"
+                  aria-controls="bib-vasco"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-vasco" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-vasco-code">Copy</button>
                 </div>
+                <pre><code id="bib-vasco-code">@misc{jeon2026decentralized,
+  title   = {Decentralized Medical Data Sharing with Off-chain Storage and View-based Access Control},
+  author  = {Jeon, Hajin and Yoon, Hyung-Jin and Lee, Jemin and Kim, Min-Soo},
+  year    = {2026},
+  eprint  = {2610.34279},
+  archivePrefix = {arXiv},
+  doi     = {10.48550/ARXIV.2610.34279},
+  url     = {https://arxiv.org/abs/2610.34279}
+}</code></pre>
+              </div>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/profile.jpg" alt="I don't know why this image not shown" />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Hajin Jeon</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light text-uppercase">Computer Scientist</p>
-                <p class="masthead-subheading font-weight-light mb-0"><strong>Major in:</strong></p>
-                <p class="masthead-subheading font-weight-light mb-0">Bioinformatics, Genomics, Blockchain, ...</p>
-            </div>
-        </header>
-        <!-- Education Section-->
-        <section class="page-section" id="education">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">Education</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-2"><p class="lead">2014.03. ~ 2018.02.:</p></div>
-                                <div class="col"><p class="lead">B.S. in Computer Science and Engineering</p></div>
-                                <div class="col"><p class="lead">from <a href="https://www.hanyang.ac.kr" target="_blank" rel="noopener noreferrer">Hanyang University</a>, Republic of Korea</p></div>
-                                <div class="w-100"></div>
-                                <div class="col-md-2"><p class="lead">2018.03. ~ 2023.02.:</p></div>
-                                <div class="col"><p class="lead">Ph.D. in Electrical Engineering and Computer Science</p></div>
-                                <div class="col"><p class="lead">from <a href="http://infolab.kaist.ac.kr" target="_blank" rel="noopener noreferrer">InfoLab</a>, <a href="https://www.dgist.ac.kr" target="_blank" rel="noopener noreferrer">DGIST</a> (Daegu Gyeongbuk Institute of Science & Technology), Republic of Korea</p></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2"><p class="lead">Ph.D. Thesis:</p></div>
-                                <div class="col"><p class="lead">A Method for Rapid Design of High-quality Primers for PCR Experiments</p></div>
-                                <div class="w-100"></div>
-                                <div class="col-md-2"></div>
-                                <div class="col"><p class="lead">Advisor: Min-Soo Kim (KAIST)</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                
-            </div>
-        </section>
-                <!-- Work Sectrion -->
-                <section class="page-section" id="work">
-                    <div class="container">
-                        <!-- About Section Heading-->
-                        <h2 class="page-section-heading text-center text-uppercase">Work</h2>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <!-- About Section Content-->
-                        <div class="row">
-                            <div class="col-lg-2"></div>
-                            <div class="col">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2"><p class="lead">2023.02. ~ 2023.03.:</p></div>
-                                        <div class="col"><p class="lead"><a href="https://graphai.io/lang_en/index.php" target="_blank" rel="noopener noreferrer">GraphAI</a></p></div>
-                                        <div class="col"><p class="lead">Engineer</p></div>
-                                        <div class="w-100"></div>
-                                        <div class="col-md-2"><p class="lead">2023.04. ~ Current:</p></div>
-                                        <div class="col"><p class="lead"><a href="https://www.kribb.re.kr/eng2/main/main.jsp" target="_blank" rel="noopener noreferrer">Korea Research Institute of Bioscience and Biotechnology (KRIBB)</a></p></div>
-                                        <div class="col"><p class="lead">Postdoctoral researcher in <a href="https://www.kobic.re.kr/kobic/" target="_blank" rel="noopener noreferrer">Korea Bioinformation Center (KOBIC)</a></p></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2"></div>
-                        </div>
-                        
-                    </div>
-                </section>
-        <!-- Publication Section-->
-        <section class="page-section portfolio" id="publication">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Publication</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Publication Section Content-->
+          </li>
 
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#publicationModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/publication/MRPrimerW2.jpeg" alt="MRPrimerW2 pipeline" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/publication/GPrimer.webp" alt="GPrimer pipeline" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/publication/VPrimer.png" alt="VPrimer pipeline" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/publication/SCoV2Primer.gif" alt="SCoV2Primer pipeline" />
-                        </div>
-                    </div>
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/ColorectalCancer2025.png"
+              data-figure-caption="Study workflow and mutation analysis overview in stage III Korean colorectal cancer"
+              aria-label="View figure for stage III Korean colorectal cancer study"
+            >
+              <img
+                src="assets/img/publication/ColorectalCancer2025.png"
+                alt="Stage III Korean colorectal cancer tumor-only mutation analysis workflow"
+                loading="lazy"
+              />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://doi.org/10.1371/journal.pone.0323302" target="_blank" rel="noopener noreferrer">
+                  Genetic variations and recurrence in stage III Korean colorectal cancer: Insights from tumor-only mutation analysis
+                </a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Hajin Jeon</strong>, Jong Lyul Lee, Hyeran Shim, Soobok Joe, Iksu Byeon, Chan Wook Kim,
+                Seok-Byung Lim, In Ja Park, Yong Sik Yoon, Hoang Bao Khanh Chu, Young-Joon Kim, Chang Sik Yu,
+                Jin Ok Yang
+              </p>
+              <p class="pub-venue">
+                <em>PLOS ONE</em>, Vol. 20, No. 5, e0323302, May 2025.
+              </p>
+              <div class="pub-actions">
+                <a href="https://doi.org/10.1371/journal.pone.0323302" target="_blank" rel="noopener noreferrer">Paper</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/ColorectalCancer2025.png"
+                  data-figure-caption="Study workflow and mutation analysis overview in stage III Korean colorectal cancer"
+                >
+                  Figure
+                </button>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-crc2025"
+                  aria-expanded="false"
+                  aria-controls="bib-crc2025"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-crc2025" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-crc2025-code">Copy</button>
                 </div>
-                
+                <pre><code id="bib-crc2025-code">@article{jeon2025genetic,
+  title   = {Genetic variations and recurrence in stage III Korean colorectal cancer: Insights from tumor-only mutation analysis},
+  author  = {Jeon, Hajin and Lee, Jong Lyul and Shim, Hyeran and Joe, Soobok and Byeon, Iksu and Kim, Chan Wook and Lim, Seok-Byung and Park, In Ja and Yoon, Yong Sik and Chu, Hoang Bao Khanh and Kim, Young-Joon and Yu, Chang Sik and Yang, Jin Ok},
+  journal = {PLOS ONE},
+  volume  = {20},
+  number  = {5},
+  pages   = {e0323302},
+  year    = {2025},
+  doi     = {10.1371/journal.pone.0323302}
+}</code></pre>
+              </div>
             </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                        <h2 class="lead text-center"> <a href="mailto:hjjeon.bioinfo@gmail.com">mailto: hjjeon.bioinfo@gmail.com</a></h2>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Social Icons-->
-                    <div class="col">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Hajin-Jeon" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://scholar.google.com/citations?user=fUYn-2sAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-google"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col">
-                        <h4 class="text-uppercase mb-4">Thanks to Freelance Free Template!</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme <br> created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Hajin Jeon 2023</small></div>
-        </div>
+          </li>
 
-        
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="publicationModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">MRPrimerW2</h2>
-                                    <p class="lead">: an enhanced tool for rapid design of valid high-quality primers with multiple search modes for qPCR experiments</p>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/publication/MRPrimerW2.jpeg" alt="MRPrimerW2 pipeline" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="container text-start">
-                                        <div class="row">
-                                            <div class="col-md-2"><p class="mb-4">Title</p></div>
-                                            <div class="col"><p class="mb-4">MRPrimerW2: an enhanced tool for rapid design of valid high-quality primers with multiple search modes for qPCR experiments</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Authors</p></div>
-                                            <div class="col"><p class="mb-4"><strong>Hajin Jeon</strong>, Jeongmin Bae, Sang-Hyun Hwang, Kyu-Young Whang, Hyun-Seob Lee, Hyerin Kim, Min-Soo Kim</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Journal Info.</p></div>
-                                            <div class="col"><p class="mb-4">Nucleic acids research (NAR), Oxford University Press</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Published</p></div>
-                                            <div class="col"><p class="mb-4">Volume 47, Issue W1, 02 July 2019, Pages W614-W622. <a href="https://academic.oup.com/nar/article/47/W1/W614/5482508" target="_blank" rel="noopener noreferrer">(link)</a></p></div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/VPrimer.png"
+              data-figure-caption="VPrimer: Pipeline for designing and updating primer-probe sets with high variant coverage"
+              aria-label="View figure for VPrimer"
+            >
+              <img src="assets/img/publication/VPrimer.png" alt="VPrimer pipeline diagram" loading="lazy" />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://ieeexplore.ieee.org/document/9663023" target="_blank" rel="noopener noreferrer">
+                  VPrimer: A Method of Designing and Updating Primer and Probe With High Variant Coverage for RNA Virus Detection
+                </a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Hajin Jeon</strong>, Jeongmin Bae, Hyerin Kim, Min-Soo Kim
+              </p>
+              <p class="pub-venue">
+                <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>, Vol. 20, No. 1, pp. 775&ndash;784, Jan.&ndash;Feb. 2023.
+              </p>
+              <div class="pub-actions">
+                <a href="https://ieeexplore.ieee.org/document/9663023" target="_blank" rel="noopener noreferrer">Paper</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <a href="https://doi.org/10.1109/TCBB.2021.3138145" target="_blank" rel="noopener noreferrer">DOI</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/VPrimer.png"
+                  data-figure-caption="VPrimer: Pipeline for designing and updating primer-probe sets with high variant coverage"
+                >
+                  Figure
+                </button>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-vprimer"
+                  aria-expanded="false"
+                  aria-controls="bib-vprimer"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-vprimer" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-vprimer-code">Copy</button>
                 </div>
+                <pre><code id="bib-vprimer-code">@article{jeon2023vprimer,
+  title   = {VPrimer: A Method of Designing and Updating Primer and Probe With High Variant Coverage for RNA Virus Detection},
+  author  = {Jeon, Hajin and Bae, Jeongmin and Kim, Hyerin and Kim, Min-Soo},
+  journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  volume  = {20},
+  number  = {1},
+  pages   = {775--784},
+  year    = {2023},
+  doi     = {10.1109/TCBB.2021.3138145}
+}</code></pre>
+              </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">GPrimer</h2>
-                                    <p class="lead">: a fast GPU-based pipeline for primer design for qPCR experiments</p>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/publication/GPrimer.webp" alt="GPrimer pipeline" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="container text-start">
-                                        <div class="row">
-                                            <div class="col-md-2"><p class="mb-4">Title</p></div>
-                                            <div class="col"><p class="mb-4">GPrimer: a fast GPU-based pipeline for primer design for qPCR experiments</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Authors</p></div>
-                                            <div class="col"><p class="mb-4">Jeongmin Bae, <strong>Hajin Jeon</strong>, Min-Soo Kim</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Journal Info.</p></div>
-                                            <div class="col"><p class="mb-4">BMC bioinformatics, BioMed Central</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Published</p></div>
-                                            <div class="col"><p class="mb-4">Volume 22, Article number 220, 29 April 2021. <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04133-4" target="_blank" rel="noopener noreferrer">(link)</a></p></div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">VPrimer</h2>
-                                    <p class="lead">: A method of designing and updating primer and probe with high variant coverage for RNA virus detection</p>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/publication/VPrimer.png" alt="VPrimer pipeline" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="container text-start">
-                                        <div class="row">
-                                            <div class="col-md-2"><p class="mb-4">Title</p></div>
-                                            <div class="col"><p class="mb-4">VPrimer: A method of designing and updating primer and probe with high variant coverage for RNA virus detection</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Authors</p></div>
-                                            <div class="col"><p class="mb-4"><strong>Hajin Jeon</strong>, Jeongmin Bae, Hyerin Kim, Min-Soo Kim</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Journal Info.</p></div>
-                                            <div class="col"><p class="mb-4">IEEE/ACM transactions on computational biology and bioinformatics, IEEE</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Published</p></div>
-                                            <div class="col"><p class="mb-4">Early Access. <a href="https://ieeexplore.ieee.org/abstract/document/9663023" target="_blank" rel="noopener noreferrer">(link)</a></p></div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">SCoV2Primer</h2>
-                                    <p class="lead">A Web-based Method for Designing and Validating Primer-probe Sets for SARS-CoV-2</p>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/publication/SCoV2Primer.gif" alt="SCoV2Primer pipeline" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="container text-start">
-                                        <div class="row">
-                                            <div class="col-md-2"><p class="mb-4">Title</p></div>
-                                            <div class="col"><p class="mb-4">A Web-based Method for Designing and Validating Primer-probe Sets for SARS-CoV-2</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Authors</p></div>
-                                            <div class="col"><p class="mb-4"><strong>Hajin Jeon</strong>, Jeongmin Bae, Min-Soo Kim</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Conference Info.</p></div>
-                                            <div class="col"><p class="mb-4">2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), IEEE</p></div>
-                                            <div class="w-100"></div>
-                                            <div class="col-md-2"><p class="mb-4">Published</p></div>
-                                            <div class="col"><p class="mb-4">09-12 December 2021, Houston, TX, USA. <a href="https://ieeexplore.ieee.org/abstract/document/9669619" target="_blank" rel="noopener noreferrer">(link)</a></p></div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </li>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/SCoV2Primer.gif"
+              data-figure-caption="SCoV2Primer: Web-based method for designing and validating SARS-CoV-2 primer-probe sets"
+              aria-label="View figure for SCoV2Primer"
+            >
+              <img src="assets/img/publication/SCoV2Primer.gif" alt="SCoV2Primer interface preview" loading="lazy" />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://ieeexplore.ieee.org/document/9669619" target="_blank" rel="noopener noreferrer">
+                  A Web-based Method for Designing and Validating Primer-probe Sets for SARS-CoV-2
+                </a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Hajin Jeon</strong>, Jeongmin Bae, Min-Soo Kim
+              </p>
+              <p class="pub-venue">
+                <em>2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</em>, pp. 1339&ndash;1342, Houston, TX, USA, Dec. 2021.
+              </p>
+              <div class="pub-actions">
+                <a href="https://ieeexplore.ieee.org/document/9669619" target="_blank" rel="noopener noreferrer">Paper</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <a href="https://doi.org/10.1109/BIBM52615.2021.9669619" target="_blank" rel="noopener noreferrer">DOI</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/SCoV2Primer.gif"
+                  data-figure-caption="SCoV2Primer: Web-based method for designing and validating SARS-CoV-2 primer-probe sets"
+                >
+                  Figure
+                </button>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-scov2"
+                  aria-expanded="false"
+                  aria-controls="bib-scov2"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-scov2" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-scov2-code">Copy</button>
+                </div>
+                <pre><code id="bib-scov2-code">@inproceedings{jeon2021scov2primer,
+  title     = {A Web-based Method for Designing and Validating Primer-probe Sets for SARS-CoV-2},
+  author    = {Jeon, Hajin and Bae, Jeongmin and Kim, Min-Soo},
+  booktitle = {2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  pages     = {1339--1342},
+  year      = {2021},
+  doi       = {10.1109/BIBM52615.2021.9669619}
+}</code></pre>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/GPrimer.webp"
+              data-figure-caption="GPrimer: GPU-based pipeline for qPCR primer design"
+              aria-label="View figure for GPrimer"
+            >
+              <img src="assets/img/publication/GPrimer.webp" alt="GPrimer pipeline diagram" loading="lazy" />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a
+                  href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04133-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GPrimer: a fast GPU-based pipeline for primer design for qPCR experiments
+                </a>
+              </h3>
+              <p class="pub-authors">
+                Jeongmin Bae, <strong>Hajin Jeon</strong>, Min-Soo Kim
+              </p>
+              <p class="pub-venue">
+                <em>BMC Bioinformatics</em>, Vol. 22, Article 220, Apr. 2021.
+              </p>
+              <div class="pub-actions">
+                <a
+                  href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04133-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Paper
+                </a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <a href="https://doi.org/10.1186/s12859-021-04133-4" target="_blank" rel="noopener noreferrer">DOI</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/GPrimer.webp"
+                  data-figure-caption="GPrimer: GPU-based pipeline for qPCR primer design"
+                >
+                  Figure
+                </button>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-gprimer"
+                  aria-expanded="false"
+                  aria-controls="bib-gprimer"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-gprimer" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-gprimer-code">Copy</button>
+                </div>
+                <pre><code id="bib-gprimer-code">@article{bae2021gprimer,
+  title   = {GPrimer: a fast GPU-based pipeline for primer design for qPCR experiments},
+  author  = {Bae, Jeongmin and Jeon, Hajin and Kim, Min-Soo},
+  journal = {BMC Bioinformatics},
+  volume  = {22},
+  pages   = {220},
+  year    = {2021},
+  doi     = {10.1186/s12859-021-04133-4}
+}</code></pre>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <button
+              type="button"
+              class="pub-thumb"
+              data-figure-src="assets/img/publication/MRPrimerW2.jpeg"
+              data-figure-caption="MRPrimerW2: Architecture for valid qPCR primer design with multiple search modes"
+              aria-label="View figure for MRPrimerW2"
+            >
+              <img src="assets/img/publication/MRPrimerW2.jpeg" alt="MRPrimerW2 pipeline diagram" loading="lazy" />
+            </button>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a
+                  href="https://academic.oup.com/nar/article/47/W1/W614/5482508"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MRPrimerW2: an enhanced tool for rapid design of valid high-quality primers with multiple search modes for qPCR experiments
+                </a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Hajin Jeon</strong>, Jeongmin Bae, Sang-Hyun Hwang, Kyu-Young Whang, Hyun-Seob Lee,
+                Hyerin Kim, Min-Soo Kim
+              </p>
+              <p class="pub-venue">
+                <em>Nucleic Acids Research</em>, Vol. 47, Issue W1, pp. W614&ndash;W622, Jul. 2019.
+              </p>
+              <div class="pub-actions">
+                <a
+                  href="https://academic.oup.com/nar/article/47/W1/W614/5482508"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Paper
+                </a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <a href="https://doi.org/10.1093/nar/gkz323" target="_blank" rel="noopener noreferrer">DOI</a>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-figure-src="assets/img/publication/MRPrimerW2.jpeg"
+                  data-figure-caption="MRPrimerW2: Architecture for valid qPCR primer design with multiple search modes"
+                >
+                  Figure
+                </button>
+                <span class="action-sep" aria-hidden="true">&middot;</span>
+                <button
+                  type="button"
+                  class="action-link"
+                  data-bibtex-target="bib-mrprimerw2"
+                  aria-expanded="false"
+                  aria-controls="bib-mrprimerw2"
+                >
+                  BibTeX
+                </button>
+              </div>
+              <div class="pub-bibtex" id="bib-mrprimerw2" hidden>
+                <div class="bibtex-bar">
+                  <span>BibTeX</span>
+                  <button type="button" class="bibtex-copy" data-copy-bibtex="bib-mrprimerw2-code">Copy</button>
+                </div>
+                <pre><code id="bib-mrprimerw2-code">@article{jeon2019mrprimerw2,
+  title   = {MRPrimerW2: an enhanced tool for rapid design of valid high-quality primers with multiple search modes for qPCR experiments},
+  author  = {Jeon, Hajin and Bae, Jeongmin and Hwang, Sang-Hyun and Whang, Kyu-Young and Lee, Hyun-Seob and Kim, Hyerin and Kim, Min-Soo},
+  journal = {Nucleic Acids Research},
+  volume  = {47},
+  number  = {W1},
+  pages   = {W614--W622},
+  year    = {2019},
+  doi     = {10.1093/nar/gkz323}
+}</code></pre>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="content-section" id="experience">
+        <h2>Experience</h2>
+        <ul class="entry-list">
+          <li class="entry-row">
+            <div class="entry-date">2025.03 &ndash; Present</div>
+            <div>
+              <div class="entry-title">Senior Researcher</div>
+              <div class="entry-org">LG H&amp;H, Seoul, Republic of Korea</div>
+            </div>
+          </li>
+          <li class="entry-row">
+            <div class="entry-date">2023.04 &ndash; 2025.02</div>
+            <div>
+              <div class="entry-title">Postdoctoral Researcher</div>
+              <div class="entry-org">
+                <a href="https://www.kobic.re.kr/kobic/" target="_blank" rel="noopener noreferrer">Korea Bioinformation Center (KOBIC)</a>,
+                <a href="https://www.kribb.re.kr/eng2/main/main.jsp" target="_blank" rel="noopener noreferrer">Korea Research Institute of Bioscience and Biotechnology (KRIBB)</a>,
+                Daejeon, Republic of Korea
+              </div>
+            </div>
+          </li>
+          <li class="entry-row">
+            <div class="entry-date">2023.02 &ndash; 2023.03</div>
+            <div>
+              <div class="entry-title">Engineer</div>
+              <div class="entry-org">
+                <a href="https://graphai.io/en/" target="_blank" rel="noopener noreferrer">GraphAI</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-section" id="education">
+        <h2>Education</h2>
+        <ul class="entry-list">
+          <li class="entry-row">
+            <div class="entry-date">2018.03 &ndash; 2023.02</div>
+            <div>
+              <div class="entry-title">Ph.D. in Electrical Engineering and Computer Science</div>
+              <div class="entry-org">
+                <a href="http://infolab.kaist.ac.kr" target="_blank" rel="noopener noreferrer">InfoLab</a>,
+                <a href="https://www.dgist.ac.kr" target="_blank" rel="noopener noreferrer">DGIST</a>
+                (Daegu Gyeongbuk Institute of Science &amp; Technology), Republic of Korea
+              </div>
+              <div class="entry-meta">
+                Dissertation: <em>A Method for Rapid Design of High-quality Primers for PCR Experiments</em><br />
+                Advisor: Min-Soo Kim (KAIST)
+              </div>
+            </div>
+          </li>
+          <li class="entry-row">
+            <div class="entry-date">2014.03 &ndash; 2018.02</div>
+            <div>
+              <div class="entry-title">B.S. in Computer Science and Engineering</div>
+              <div class="entry-org">
+                <a href="https://www.hanyang.ac.kr" target="_blank" rel="noopener noreferrer">Hanyang University</a>,
+                Republic of Korea
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-section" id="contact">
+        <h2>Contact Me!</h2>
+        <ul class="contact-list">
+          <li class="contact-row">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:hjjeon.bioinfo@gmail.com">hjjeon.bioinfo@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-row">
+            <div class="contact-label">ORCID</div>
+            <div class="contact-value">
+              <a href="https://orcid.org/0000-0002-6513-3280" target="_blank" rel="noopener noreferrer">
+                0000-0002-6513-3280
+              </a>
+            </div>
+          </li>
+          <li class="contact-row">
+            <div class="contact-label">Google Scholar</div>
+            <div class="contact-value">
+              <a href="https://scholar.google.com/citations?user=fUYn-2sAAAAJ" target="_blank" rel="noopener noreferrer">
+                Hajin Jeon
+              </a>
+            </div>
+          </li>
+          <li class="contact-row">
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">
+              <a href="https://github.com/Hajin-Jeon" target="_blank" rel="noopener noreferrer">
+                github.com/Hajin-Jeon
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>&copy; 2026 Hajin Jeon</span>
+      </div>
+    </footer>
+
+    <dialog class="figure-dialog" id="figureDialog" aria-labelledby="figureDialogCaption">
+      <div class="dialog-header">
+        <p class="dialog-caption" id="figureDialogCaption"></p>
+        <button type="button" class="dialog-close" id="figureDialogClose" aria-label="Close figure">Close</button>
+      </div>
+      <div class="dialog-body">
+        <img id="figureDialogImg" src="" alt="" />
+      </div>
+    </dialog>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
